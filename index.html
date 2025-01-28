@@ -252,21 +252,22 @@
             }
 
             const searchUrls = {
-                fitgirl: https://fitgirl-repacks.site/?s=${encodeURIComponent(searchQuery)},
-                skidrow: https://www.skidrowreloaded.com/?s=${encodeURIComponent(searchQuery)},
-                steamrip: https://steamrip.com/?s=${encodeURIComponent(searchQuery)},
-                gog: https://gog-games.to/search/${encodeURIComponent(searchQuery)},
-                wowroms: https://wowroms.com/en/search?query=${encodeURIComponent(searchQuery)},
-                blueroms: https://www.blueroms.com/search?q=${encodeURIComponent(searchQuery)},
-                myabandonware: https://www.myabandonware.com/search/q/${encodeURIComponent(searchQuery)},
-                watchsomuch: https://www.watchsomuch.tv/Search/?search=${encodeURIComponent(searchQuery)},
-                nyaa: https://nyaa.si/?f=0&c=0_0&q=${encodeURIComponent(searchQuery)},
-                hianime: https://hianime.to/search?q=${encodeURIComponent(searchQuery)},
-                archive: https://archive.org/details/${encodeURIComponent(searchQuery)},
-                an1: https://an1.com/?story=${encodeURIComponent(searchQuery)},
-                kemono: https://kemono.su/?q=${encodeURIComponent(searchQuery)},
-                steamgriddb: https://www.steamgriddb.com/search/grids?q=${encodeURIComponent(searchQuery)}
-            };
+    fitgirl: `https://fitgirl-repacks.site/?s=${encodeURIComponent(searchQuery)}`,
+    skidrow: `https://www.skidrowreloaded.com/?s=${encodeURIComponent(searchQuery)}`,
+    steamrip: `https://steamrip.com/?s=${encodeURIComponent(searchQuery)}`,
+    gog: `https://gog-games.to/search/${encodeURIComponent(searchQuery)}`,
+    wowroms: `https://wowroms.com/en/search?query=${encodeURIComponent(searchQuery)}`,
+    blueroms: `https://www.blueroms.com/search?q=${encodeURIComponent(searchQuery)}`,
+    myabandonware: `https://www.myabandonware.com/search/q/${encodeURIComponent(searchQuery)}`,
+    watchsomuch: `https://www.watchsomuch.tv/Search/?search=${encodeURIComponent(searchQuery)}`,
+    nyaa: `https://nyaa.si/?f=0&c=0_0&q=${encodeURIComponent(searchQuery)}`,
+    hianime: `https://hianime.to/search?q=${encodeURIComponent(searchQuery)}`,
+    archive: `https://archive.org/details/${encodeURIComponent(searchQuery)}`,
+    an1: `https://an1.com/?story=${encodeURIComponent(searchQuery)}`,
+    kemono: `https://kemono.su/?q=${encodeURIComponent(searchQuery)}`,
+    steamgriddb: `https://www.steamgriddb.com/search/grids?q=${encodeURIComponent(searchQuery)}`
+};
+
 
             if (!searchUrls[site]) {
                 alert("Unknown site.");
